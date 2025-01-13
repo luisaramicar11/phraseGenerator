@@ -46,21 +46,20 @@ api-calculator/
 ### Clone this repository:
 
 ```bash
-git clone https://github.com/illuminaki/nextjs-api-calculator.git
-cd next-js-api-calculator
+git clone https://github.com/luisaramicar11/phraseGenerator.git
+cd phraseGenerator
 ```
 
 ### Build the Docker image:
 
 ```bash
-docker build -t api-calculator .
+docker build -t phrase-generator .
 ```
 
 ### Start the container in development mode:
 
 ```bash
-docker build -t api-calculator .
-docker run -p 3000:3000 api-calculator
+docker run -p 3000:3000 phrase-generator
 ```
 
 ### Access the application:
@@ -75,19 +74,14 @@ http://localhost:3000
 
 1. Users are presented with a simple, modern interface.
 2. They input a number into a form and submit it.
-3. The backend API processes the input and performs the following calculations:
-   - Calculates the square of the number.
-   - Calculates the cube of the number.
-   - Determines whether the number is even or odd.
+3. The backend API generate a subject and a predicate randomly.
 4. The results are displayed in real-time on the interface.
 
 ### Example:
 
-**Input:** 4  
+**Input:** Click on the button "Generate Phrase"
 **Output:**
-- The square of 4 is: 16
-- The cube of 4 is: 64
-- 4 is even.
+- My friend runs fast
 
 ## Docker Commands for Beginners
 
@@ -96,7 +90,7 @@ http://localhost:3000
 To build the Docker image:
 
 ```bash
-docker build -t api-calculator .
+docker build -t phrase-generator .
 ```
 
 ### Run the Application
@@ -104,7 +98,7 @@ docker build -t api-calculator .
 Run the application interactively:
 
 ```bash
-docker run -p 3000:3000 api-calculator
+docker run -p 3000:3000 phrase-generator
 ```
 
 ### Stop and Remove Containers
